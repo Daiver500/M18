@@ -34,7 +34,7 @@ a:link {
   box-sizing: border-box; }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto; }
 
 .hidden {
@@ -366,7 +366,7 @@ template {
   display: none; }
 
 .main__request {
-  max-width: 600px;
+  max-width: 40%;
   padding-top: 48px;
   position: relative; }
 
@@ -381,7 +381,7 @@ template {
   letter-spacing: -0.5px; }
 
 .main__information {
-  padding-top: 205px; }
+  padding-top: 35%; }
 
 .main__header,
 .main__text {
@@ -393,18 +393,19 @@ template {
 .main__text {
   font-size: 21px;
   line-height: 30px;
-  margin-bottom: 44px;
+  margin-bottom: 25px;
   max-width: 460px; }
 
 .main__inner {
   display: flex;
   justify-content: space-around;
-  padding-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   height: 100vh; }
 
 .main__video {
   position: relative;
-  max-width: 920px; }
+  max-width: 60%; }
 
 .main__videobutton,
 .main__videotext {
@@ -479,7 +480,7 @@ template {
 
 .main__scrollbutton {
   position: absolute;
-  bottom: 48px;
+  bottom: 1%;
   width: 245px;
   display: flex;
   font-size: 16px;
@@ -506,7 +507,15 @@ template {
 
 .main__start {
   margin-bottom: 0;
-  margin-left: 30px; }
+  margin-left: 14px;
+  text-align: center; }
+
+@media (width: 1023px) {
+  .main__inner {
+    flex-direction: column; }
+  .main__request,
+  .main__video {
+    max-width: 100%; } }
 
 .modal__inner,
 .modalsuccess__inner {

@@ -1,6 +1,7 @@
 
 .main__request {
   max-width: 600px;
+  padding-top: 48px;
 }
 
 .main__header {
@@ -13,10 +14,21 @@
 .main__inner {
   display: flex;
   justify-content: space-around;
+  padding-top: 20px;
+  height: 100vh;
 }
 
 .main__video {
   position: relative;
+  max-width: 920px;
+  max-height: 940px;
+}
+
+.main__videobutton,
+.main__videotext {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main__videobutton {
@@ -24,11 +36,7 @@
   height: 254px;
   background-color:inherit;
   border-radius: 50%;
-  display: inline-flex;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 40%;
+  top: 30%;
   display: flex;
   cursor: pointer;
   border: 0;
@@ -36,4 +44,15 @@
 
 .main__videosvg {
   background-color:inherit;
+}
+
+.main__videotext {
+  top: 60%;
+  max-width: 165px;
+}
+
+.main__link {
+  position: absolute;
+  top: 20px;
+  right: 10%;
 }

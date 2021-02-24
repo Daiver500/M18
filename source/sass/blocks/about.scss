@@ -1,0 +1,16 @@
+.about_inner {
+  display: flex;
+}
+
+.about__header,
+.about__text {
+  max-width: 1880px;
+  text-align: center;
+}
+
+.about__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}

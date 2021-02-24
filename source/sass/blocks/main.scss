@@ -1,0 +1,39 @@
+
+.main__request {
+  max-width: 600px;
+}
+
+.main__header {
+  font-family: "MullerMedium";
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -0.5px;
+}
+
+.main__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__video {
+  position: relative;
+}
+
+.main__videobutton {
+  min-width: 254px;
+  height: 254px;
+  background-color:inherit;
+  border-radius: 50%;
+  display: inline-flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  display: flex;
+  cursor: pointer;
+  border: 0;
+}
+
+.main__videosvg {
+  background-color:inherit;
+}

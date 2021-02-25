@@ -715,6 +715,9 @@ template {
 .slider__imagejpg {
   width: 500px; }
 
+.sliader__header {
+  max-width: 900px; }
+
 .slider__button {
   position: absolute;
   width: 20px;
@@ -761,7 +764,8 @@ template {
   margin-bottom: 59px;
   position: relative;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  max-width: 280px; }
 
 .form__title::before {
   content: "";

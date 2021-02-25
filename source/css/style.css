@@ -662,7 +662,9 @@ template {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding-left: 0; }
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .about__itemtitle {
   font-family: MillerMedium;
@@ -683,11 +685,13 @@ template {
 
 .about__itemtext {
   margin-top: 0;
-  margin-bottom: 130px;
   font-size: 16px;
   line-height: 24px;
   color: #666666;
   max-width: 420px; }
+
+.about__item:not(:last-child) {
+  margin-bottom: 130px; }
 
 .about__time {
   width: 450px;

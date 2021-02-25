@@ -517,7 +517,6 @@ template {
   .main__video {
     max-width: 100%; } }
 
-.modal__inner,
 .modalsuccess__inner {
   display: flex;
   width: 728px;
@@ -530,12 +529,10 @@ template {
   margin: auto;
   text-align: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  z-index: 2; }
+  z-index: 2;
+  background-color: #ffffff;
+  padding: 180px 165px; }
 
-.modal__inner {
-  background-color: #ffffff; }
-
-.modal,
 .modalsuccess {
   position: fixed;
   display: flex;
@@ -548,54 +545,11 @@ template {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.8); }
 
-.modalsuccess__inner {
-  background-color: #000000;
-  padding: 180px 165px; }
-
 .modalsuccess__text {
   font-size: 25px;
   line-height: 43px;
   font-weight: 500; }
 
-.modal__picture {
-  width: 100%; }
-
-.modal__image {
-  display: block; }
-
-.modal__form {
-  position: relative; }
-
-.modal__form::after {
-  content: "";
-  position: absolute;
-  left: 65px;
-  top: 170px;
-  background-repeat: no-repeat;
-  width: 6px;
-  height: 7px;
-  background-image: url("../img/star.png"); }
-
-.modal__data {
-  padding: 70px 55px 70px; }
-
-.modal__header {
-  margin-bottom: 50px;
-  font-size: 25px;
-  line-height: 43px;
-  font-weight: 600;
-  margin-top: 0; }
-
-.modal__phone,
-.modal__email {
-  padding: 15px;
-  min-width: 270px;
-  margin-bottom: 20px; }
-
-.modal__button {
-  padding: 18px 40px; }
-
-.modal__close,
 .modalsuccess__close {
   position: absolute;
   top: 20px;
@@ -608,24 +562,6 @@ template {
 
 .hidden {
   display: none; }
-
-@media (max-width: 767px) {
-  .modal__inner,
-  .modalsuccess__inner {
-    width: 320px; }
-  .modal__image {
-    display: none; }
-  .modal__data {
-    padding: 100px 15px 185px 15px; }
-  .modal__picture {
-    width: auto; }
-  .modal__form::after {
-    left: 35px;
-    top: 205px; }
-  .modal__button {
-    padding: 19px 103px; }
-  .modalsuccess__inner {
-    padding: 180px 15px; } }
 
 .about {
   margin-bottom: 185px; }

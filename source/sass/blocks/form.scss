@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 135px;
+}
+
 .form__inner {
   max-width: 985px;
 }
@@ -24,10 +28,9 @@
   line-height: 24px;
 }
 
-
 .form__name,
 .form__email {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .form__phone {
@@ -44,7 +47,7 @@
 
 .form__title {
   margin-top: 0;
-  margin-bottom: 59px;
+  margin-bottom: 57px;
   position: relative;
   font-size: 16px;
   line-height: 24px;

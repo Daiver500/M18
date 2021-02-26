@@ -511,12 +511,19 @@ template {
   margin-left: 14px;
   text-align: center; }
 
-@media (width: 1023px) {
+@media (max-width: 1023px) {
   .main__inner {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
+  .main__information {
+    padding-top: 5%; }
+  .main__request {
+    margin-bottom: 20px; }
   .main__request,
   .main__video {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .main__video {
+    max-height: 500px; } }
 
 .modal__inner {
   display: flex;

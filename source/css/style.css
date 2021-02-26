@@ -656,12 +656,20 @@ template {
 .slider {
   margin-bottom: 138px; }
 
+.slide {
+  padding-right: 200px;
+  position: relative; }
+
 .slider__inner {
   position: relative; }
 
-.slider__imagejpg {
-  width: 750px;
-  height: 500px; }
+.slider__wrapper {
+  overflow: hidden; }
+
+.slider__wrapperinner {
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s all; }
 
 .slider__header {
   max-width: 950px;
@@ -673,9 +681,8 @@ template {
   height: 40px; }
 
 .slider__image {
-  display: flex;
-  overflow: hidden;
-  justify-content: space-around; }
+  width: 750px;
+  height: 500px; }
 
 .slider__picture {
   padding-right: 200px; }
@@ -699,7 +706,7 @@ template {
 
 .slider__remark {
   position: absolute;
-  top: 135px;
+  top: 0;
   left: 93%;
   transform: translateX(-93%);
   width: 136px; }
@@ -719,7 +726,8 @@ template {
 .slider__button--left,
 .slider__button--right {
   position: absolute;
-  top: 585px; }
+  top: 585px;
+  z-index: 1; }
 
 .slider__button--left {
   background-image: url(../img/arrowleft.svg);

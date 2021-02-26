@@ -487,7 +487,8 @@ template {
   line-height: 18px;
   padding-left: 45px;
   font-family: "MullerMedium";
-  color: #F9572E; }
+  color: #F9572E;
+  cursor: pointer; }
 
 .main__scrollbutton:hover,
 .main__scrollbutton:focus,
@@ -517,7 +518,7 @@ template {
   .main__video {
     max-width: 100%; } }
 
-.modalsuccess__inner {
+.modal__inner {
   display: flex;
   width: 728px;
   min-height: 444px;
@@ -533,7 +534,7 @@ template {
   background-color: #ffffff;
   padding: 180px 165px; }
 
-.modalsuccess {
+.modal {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -545,12 +546,12 @@ template {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.8); }
 
-.modalsuccess__text {
+.modal_text {
   font-size: 25px;
   line-height: 43px;
   font-weight: 500; }
 
-.modalsuccess__close {
+.modal__close {
   position: absolute;
   top: 20px;
   right: 20px;

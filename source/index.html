@@ -49,16 +49,16 @@
                 <h1 class="main__header">Ремонт квартир <br> в типовых домах</h1>
                 <p class="main__text">Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</p>
                 <div class="main__buttons">
-                  <button class="main__button" type="button">Узнайте о запуске первым</button>
+                  <button id="up-button" class="main__button main__scroller" type="button">Узнайте о запуске первым</button>
                   <p class="main__start">Старт весной 2016</p>
                 </div>
               </div>
-              <a href="#" class="main__scrollbutton">
+              <a id="upscroll-button" class="main__scrollbutton main__scroller">
                 Листайте вниз,<br> чтобы ничего не упустить
               </a>
            </div>
            <div class="main__video">
-             <a class="main__link main__link--tel" href="tel:+78129035445" aria-label="phone">Контакты</a>
+             <a id="up-contacts" class="main__link main__link--tel main__scroller" href="tel:+78129035445" aria-label="phone">Контакты</a>
 
              <picture class="main__image">
               <!--<source type="image/webp" media="(max-width:767px)" srcset="img/videoimage-mobile.webp, img/videoimage-mobile@2x.webp 2x">
@@ -187,10 +187,10 @@
       </div>
     </section>
 
-  <section class="modalsuccess hidden">
-      <form class="modalsuccess__inner">
-          <p class="modalsuccess__text">Форма успешно отправлена, спасибо:)</p>
-          <button class="modalsuccess__close" type="button" aria-label="Закрыть">
+  <section class="modal hidden">
+      <form class="modal__inner">
+          <p class="modal__text">Форма успешно отправлена, спасибо:)</p>
+          <button class="modal__close" type="button" aria-label="Закрыть">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 23L23 1M23 23L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
@@ -244,5 +244,6 @@
   </footer>
   <script src="js/main.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>

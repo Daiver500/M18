@@ -2,7 +2,7 @@ const slides = document.querySelectorAll(".slide");
 const slide = document.querySelector(".slide");
 const buttonRight = document.querySelector(".slider__button--right");
 const buttonLeft = document.querySelector(".slider__button--left");
-const slidesField = document.querySelector(".slider__wrapperinner")
+const slidesField = document.querySelector(".slider__wrapperinner");
 width = window.getComputedStyle(slide).width;
 
 let offset = 0;
@@ -24,4 +24,6 @@ buttonLeft.addEventListener("click", () => {
   }
   slidesField.style.transform = `translateX(+${offset}px )`
 })
+
+
 

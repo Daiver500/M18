@@ -51,6 +51,7 @@ exports.images = images;
 const imageswebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"))
     .pipe(gulp.dest("build/img"))
 }
 
@@ -111,7 +112,7 @@ exports.build = build();
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "build"
+      baseDir: "source"
     },
     cors: true,
     notify: false,
@@ -134,11 +135,23 @@ const html = () => {
 
 exports.html = html;
 
+//JS
+
+const js = () => {
+  return gulp.src(["source/*.js"
+], {
+  base: "source"
+})
+.pipe(gulp.dest("build"));
+};
+
+exports.js = js;
 
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/js/**/*.js", gulp.series("js"));
   gulp.watch("source/*.html").on("change", gulp.series("html", "htmlinclude", sync.reload));
 }
 

@@ -5,7 +5,6 @@ const footerContacts = document.querySelector(".footer__contacts");
 const mainForm = document.querySelector(".form__main");
 const aboutHeader = document.querySelector(".about__header");
 
-
 const scrollButtonsClickHandler = (evt) => {
   switch (evt.target.id) {
     case "up-contacts":

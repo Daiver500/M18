@@ -10,10 +10,8 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
-const uglify = require("gulp-uglify");
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
-const concat = require("gulp-concat");
 
 // Styles
 
@@ -60,7 +58,7 @@ exports.imageswebp = imageswebp;
 
 //HTML
 
-/*const htmlinclude = () => {
+const htmlinclude = () => {
   return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
@@ -68,7 +66,7 @@ exports.imageswebp = imageswebp;
     .pipe(gulp.dest("build"))
 }
 
-exports.htmlinclude = htmlinclude;*/
+exports.htmlinclude = htmlinclude;
 
 //Copy
 
@@ -101,7 +99,7 @@ const build = () => gulp.series (
   copy,
   styles,
   images,
-  //htmlinclude,
+  htmlinclude,
   imageswebp,
 );
 
@@ -126,7 +124,7 @@ exports.server = server;
 
 //HTML
 
-/*const html = () => {
+const html = () => {
   return gulp.src(["source/*.html"
 ], {
   base: "source"
@@ -134,14 +132,14 @@ exports.server = server;
 .pipe(gulp.dest("build"));
 };
 
-exports.html = html;*/
+exports.html = html;
 
 
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html").on("change", gulp.series("html", "htmlinclude", sync.reload));
 }
 
 exports.default = gulp.series(

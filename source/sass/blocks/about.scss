@@ -100,3 +100,60 @@
   letter-spacing: -0.5px;
   margin-bottom: 0;
 }
+
+@media (max-width: $max-tablet-width) {
+  .about {
+    margin-bottom: 50px;
+  }
+
+  .about__inner {
+    max-width: 750px;
+  }
+
+  .about__header {
+    align-items: center;
+  }
+
+  .about__title {
+    font-size: 30px;
+  }
+
+  .about__text {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .about__itemtitle::before {
+    max-width: 350px;
+    border-bottom: 2px solid $green;
+  }
+
+  .about__time {
+    width: 350px;
+  }
+
+  .about__timedate {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .about__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px;
+    text-align: center;
+  }
+
+  .about__text {
+    margin-bottom: 50px;
+  }
+
+  .about__time {
+    width: 310px;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+}
+

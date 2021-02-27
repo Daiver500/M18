@@ -96,3 +96,59 @@
 .form__ruleslink {
   color: $orange;
 }
+
+@media (max-width: $max-tablet-width) {
+  .form__inner {
+    max-width:750px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form__group {
+    padding: 54px 30px 59px 30px;
+  }
+
+  .form__legend {
+    font-size: 30px;
+  }
+
+  .form__title {
+    text-align: center;
+  }
+
+  .form__title::before {
+    left: -40px;
+    top: -2px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .form__group {
+    padding: 5px 3px 5px 3px;
+  }
+
+  .form__inputs input {
+    padding: 12px 27px 12px 25px;
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .form__legend {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .form__title {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .form__title::before {
+    display: none;
+  }
+}
+
+
+
+
